@@ -1,0 +1,292 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;  
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+}
+
+.navbar {
+  max-height: 100px;
+  padding:0;
+  margin: auto 0;
+  
+}
+
+
+/* this div keeps image inside it responsive */
+.logo-div{
+  height:100px;
+  margin:auto 0;
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+}
+
+/* logo image */
+
+.logo-div img{
+  max-height:75%;
+  width:auto;
+  overflow: hidden;
+}
+
+/* display is changed with aim to shift menu bar to right */
+ul{
+  display:inline;
+  padding-right:3%;
+  font-family: 'Open Sans', sans-serif;
+  font-size:1.5em;
+  
+}
+
+
+
+a.nav-link:hover{
+  text-decoration: underline;
+}
+
+/* bootstrap component is container for background image.   */
+.jumbotron {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height:768px;
+  color:white;
+
+}
+
+h1, p, h2, h3 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron h1{
+  font-weight: 700;
+  font-size: 5em;
+}
+
+.jumbotron p, .product h3{
+  font-weight: 100;
+  font-size: 1.85em;
+}
+
+
+/* div to make image inside it responsive */
+.product-img-div {
+  max-width: 400px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.product-img-div img{
+  max-width: 50%;
+  height:auto;
+ 
+}
+
+
+/* in bootstrap row hase display:flex, so it is only necessary to set alignement */
+.row {
+  justify-content: space-around;
+  max-width:100%;
+  
+}
+
+.product {
+  max-width:100%;
+}
+
+.product h3 {
+
+  font-weight:700;
+  color:#00c76f;
+
+}
+
+.product p{
+  font-size:1.6em;
+  font-weight: 100;
+}
+
+.product h2 {
+  font-size: 2.2em;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 9rem;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #00c76f;
+}
+
+.music{
+  max-width:100%;
+  max-height: 720px;
+  
+  /* margin:3%; */
+  float: center;
+  
+}
+
+.music .row{
+  
+  max-width:100%;
+  
+  margin:3%;
+  margin-top:8%;
+  background-color: #00c76f;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+
+/* bootstarp col div has this class as addition to default classes. I want to keep image inside it responsive */
+.music-img-div img{
+  max-width:60%;
+  height:auto;
+  overflow: hidden;
+  float:right;
+
+}
+
+.music h3, .music p, .music h2{
+  text-align: left;
+  color: #fff;
+
+}
+
+.music h2{
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #fff;
+  font-size:2em;
+  font-weight:700;
+}
+
+.music h3 {
+  font-size: 1.8em;
+  font-weight:700;
+  margin:1.8rem 0 1.8rem 0;
+}
+
+.music p{
+  font-size: 1.4em;
+  font-weight:light;
+}
+
+.description{
+  margin:auto 0;
+}
+
+/* breakup points */
+
+
+
+@media only screen and (max-width : 768px){
+  .music-img-div img{
+    max-width:100%;
+    height:auto;
+    overflow: hidden;
+    float:right;
+  
+  }
+
+  ul {
+    font-size: 1em;
+    color:#fff;
+  } 
+
+  .navbar-light .navbar-nav .nav-link{
+    color:#fff;
+  }
+
+  .navbar-light .navbar-nav .active> .nav-link{
+    color:#00c76f;
+ 
+}
+
+}
+
+
+@media only screen and (max-width : 420px) {
+
+  
+
+  .jumbotron{
+    height:500px;
+  }
+  
+  .jumbotron h1 {
+    font-size: 2.5em;
+
+  }
+
+  .jumbotron p{
+    font-size: 0.75em;
+  }
+
+  .product h3 {
+    font-size: 1.2em;
+  }
+
+  .product p{
+    font-size: 0.7em;
+  }
+
+  .product-img-div{
+    max-width:100px;
+  }
+
+  .product h2{
+    margin-bottom: 2.5rem;
+    font-size: 1.5em;
+  }
+
+  .product-img-div img{
+    max-width: 100%;
+    height:auto;
+   
+  }
+
+  /* .music {
+    height: 500px;
+  }
+
+  .music .row {
+    height: 500px;
+  }
+
+  .description {
+    height:500px;
+  } */
+
+  /* .music-img-div img{
+    max-width:100%;
+    height:auto;
+    overflow: hidden;
+    float:right;
+  
+  } */
+
+  .music h3 {
+    font-size: 1em;
+    font-weight:700;
+    margin:1rem 0 1rem 0;
+  }
+  
+  .music p{
+    font-size: 0.8em;
+    font-weight:light;
+  }
+
+  .music h2{
+    
+    font-size:1.2em;
+   
+  }
+
+ }
